@@ -1,0 +1,15 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>Elevation Profile</Name><AddInID>{3432d086-23ce-443f-ac50-6591d8872b4a}</AddInID><Description>ArcGIS Desktop Add-In to Create Elevation Profiles from raster datasets.</Description><Version>0.1</Version><Image /><Author>Alec Zoeller</Author><Company>GNU License</Company><Date>05/25/2019</Date><Targets><Target name="Desktop" version="10.1" /></Targets><AddIn language="PYTHON" library="Elevation_Profile_addin.py" namespace="Elevation_Profile_addin"><ArcMap>
+    <Commands>
+        <Tool caption="Elevation Profiler" category="Elevation Profile" class="ElevationProfiler" id="Elevation_Profile_addin.profile_tool" image="Images\Capture.GIF" message="Click to create line for elevation profile." tip="Double-click to end line and run tool."><Help heading="Click to create line for elevation profile.">Click to create line for elevation profile.</Help></Tool>
+        <ComboBox caption="DEM Layer" category="Elevation Profile" class="ComboBoxRaster" id="Elevation_Profile_addin.raster_layer_menu" itemSizeString="WWWWWW" message="The raster selected will be queried for elevation along route." rows="4" sizeString="WWWWWW" tip="Select DEM to use for elevation profiling."><Help heading="The raster selected will be queried for elevation along route.">The raster selected will be queried for elevation along route.</Help></ComboBox>
+        <ComboBox caption="Length Units" category="Elevation Profile" class="ComboBoxUnits" id="Elevation_Profile_addin.meas_units" itemSizeString="WWWWWW" message="Select the unit desired for change in horizontal position." rows="4" sizeString="WWWWWW" tip="Units for horizontal (route) measurement"><Help heading="Select the unit desired for change in horizontal position.">Select the unit desired for change in horizontal position.</Help></ComboBox>
+        <Button caption="Reset" category="Elevation Profile" class="ResetButton" id="Elevation_Profile_addin.reset" image="" message="Reset any markings or elevaiton profiles." tip="Click to reset the analysis."><Help heading="Reset any markings or elevaiton profiles.">Reset any markings or elevaiton profiles.</Help></Button>
+        </Commands>
+    <Extensions>
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="Elevation_Profile" category="Elevation Profile" id="Elevation_Profile_addin.toolbar" showInitially="true"><Items><Tool refID="Elevation_Profile_addin.profile_tool" /><ComboBox refID="Elevation_Profile_addin.raster_layer_menu" /><ComboBox refID="Elevation_Profile_addin.meas_units" /><Button refID="Elevation_Profile_addin.reset" /></Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>
