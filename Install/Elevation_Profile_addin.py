@@ -2,7 +2,7 @@
 
 """
 ***************************************************************************
-    ClipRasterByExtent.py
+    Elevation_Profile_addin.py
     ---------------------
     Date                 : May 2019
     Copyright            : (C) 2019 by Alec Zoeller
